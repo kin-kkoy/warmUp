@@ -7,7 +7,7 @@
 
 #include <stdio.h>
 
-void *getList(int *input, int numOfInputs){
+void getList(int *input, int numOfInputs){
     printf("Input data to be normalized:\n");
     for(int i = 0; i < numOfInputs; i++){
         printf("Data %d:  ", i + 1);
