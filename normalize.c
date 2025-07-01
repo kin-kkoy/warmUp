@@ -26,7 +26,7 @@ int normalize(int *data, float *output, int size){
     // get smallest and largest -> normalize using formula and just overwrite the input with the normalized value
     int successful = 0;
 
-    int min = 999, max = -999;
+    int min = data[0], max = data[0];
     for(int i = 0; i < size; i++){
         if(data[i] < min) min = data[i];
         if(data[i] > max) max = data[i];
